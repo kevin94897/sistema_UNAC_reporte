@@ -1,0 +1,270 @@
+body{
+  font-family: 'Tahoma';
+  margin: 0;
+  font-size: 13px;
+
+}
+.container{
+  max-width: 1300px;
+  margin:0 auto;
+}
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+.logo{
+  padding: 15px;
+  margin-left: 30px;
+}
+.headerAdmin{
+  background-color: #951880;
+}
+
+.headerAdmin nav{
+  max-width: 1300px;
+  margin:0 auto;
+  height: 55px;
+}
+
+.headerAdmin nav ul{
+  margin:0;
+  padding: 0;
+}
+
+.headerAdmin nav ul li{
+  display: inline-block;
+  padding: 10px;
+  border-left:1px solid #2B5E26;
+}
+.headerAdmin nav ul li:first-child{
+ border-left:none;
+}
+
+.headerAdmin nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.headerAdmin nav ul li a:hover{
+  background-color: #2f2000;
+}
+
+
+
+.breadcrumb {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.breadcrumb a {
+    text-decoration: none;
+    outline: 0;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    padding: 0 10px 0 30px;
+    background: #666;
+    background: linear-gradient(#666, #333);
+    position: relative;
+    font-family: 'Tahoma';
+}
+.breadcrumb a:first-child {
+    padding-left: 20px;
+    border-radius: 5px 0 0 5px;
+}
+.breadcrumb a:first-child:before {
+    left: 14px;
+}
+.breadcrumb a:last-child {
+    border-radius: 0 5px 5px 0;
+    padding-right: 20px;
+}
+.breadcrumb a.active, .breadcrumb a:hover {
+    background: #333;
+    background: linear-gradient(#333, #000);
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+    background: #333;
+    background: linear-gradient(135deg, #333, #000);
+}
+.breadcrumb a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    transform: scale(0.707) rotate(45deg);
+    z-index: 1;
+    background: #666;
+    background: linear-gradient(135deg, #666, #333);
+    box-shadow: 2px -2px 0 2px rgba(0, 0, 0, .4), 3px -3px 0 2px rgba(255, 255, 255, .1);
+    border-radius: 0 5px 0 50px;
+}
+.breadcrumb a:last-child:after {
+    content: none;
+}
+.breadcrumb a:before {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    position: absolute;
+    background: #444;
+    background: linear-gradient(#444, #222);
+    font-weight: 700;
+    text-align: center;
+}
+.flat a, .flat a:after {
+    background: #4BA444;
+    color: #fff;
+    transition: all .5s;
+}
+.flat a:before {
+    background: #fff;
+    box-shadow: 0 0 0 1px #ccc;
+}
+.flat a.active, .flat a.active:after, .flat a:hover, .flat a:hover:after {
+    background: #3D8437;
+}
+
+.grupo {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+.grupo:before,
+.grupo:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.caja-10{
+  float:left;
+  width:10%;
+}
+
+.caja-20{
+  float:left;
+  width:20%;
+}
+
+.caja-30{
+  float:left;
+  width:30%;
+}
+
+.caja-40{
+  float:left;
+  width:40%;
+}
+
+.caja-50{
+  float:left;
+  width:50%;
+}
+
+.caja-60{
+  float:left;
+  width:60%;
+}
+
+.caja-70{
+  float:left;
+  width:70%;
+}
+
+.caja-80{
+  float:left;
+  width:80%;
+}
+
+.caja-90{
+  float:left;
+  width:90%;
+}
+
+.caja-100{
+  float:left;
+  width:100%;
+}
+
+.center{
+  text-align:center;
+}
+
+.Canvas-input{
+  width:100%;
+  height:30px;
+  font-size: 1.2em;
+  font-family: 'Tahoma';
+  margin-bottom:1em;
+}
+
+.Canvas-boton{
+  border:none;
+  padding:10px 15px;
+  color:white;
+  border-radius: 5px;
+  font-size:1.1em;
+  font-family: 'Tahoma';
+  display:inline-block;
+  margin-left: 1em;
+  display:inline-block;
+  font-weight: normal;
+  text-align:center;
+}
+
+.Canvas-boton:hover{
+  cursor:pointer;
+}
+
+.Canvas-boton.limpiar{
+  background:#F8BE40;
+}
+
+.Canvas-boton.eliminar{
+  background:#F03C3C;
+  padding:5px 5px;
+}
+
+.Canvas-boton.agregar{
+  background:#0786E8;
+}
+
+.Canvas-boton.dpto{
+  background:#4BA444;
+  padding:5px 5px;
+}
+
+.Canvas-boton.dibujar{
+  background: #0786E8;
+}
+
+.btn{
+  padding:10px 15px;
+  border-radius:5px;
+}
+canvas{
+  margin-top:3em;
+  border:2px solid #4BA444;
+}
+
+label.error{
+  color:#F03C3C;
+  font-size:  1.2em;
+}
