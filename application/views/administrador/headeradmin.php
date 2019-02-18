@@ -15,6 +15,21 @@
   	<script type="text/javascript" src="<?= base_url('recursos/js/bootstrap.min.js') ?>"></script>
   	<script type="text/javascript" src="<?= base_url('recursos/js/socialShare.min.js') ?>"></script>
 
+  	<link href="<?= base_url('recursos/css/jquery.dataTables.css') ?>" rel="stylesheet" type="text/css">
+  	<script type="text/javascript" src="<?= base_url('recursos/js/jquery.dataTables.js') ?>"></script>
+
+	<script type="text/javascript">
+		$(document).ready( function () {
+		    $('#tabla').DataTable({
+
+			    "language": {
+		            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+		        }
+			    
+		    });
+		} );
+	</script>
+
   	<style type="text/css">
   		body{
   			font-size: 12px;

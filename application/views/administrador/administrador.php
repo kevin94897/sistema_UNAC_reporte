@@ -7,6 +7,11 @@
 	</div>
 	<div class="container-fluid">
 		<div class="col-md-12" style="padding: 0">
+
+			<div style="float: right; padding-bottom: 15px">
+				<button type="button" class="btn btn-success btn-lg" onclick="location.href = '<?php echo base_url();?>index.php/home/reportes';">Exportar a PDF</button>
+			</div>
+			
 			<?php
                 $agregado = $this->session->flashdata('agregado');
                 $editado = $this->session->flashdata('editado');
@@ -28,7 +33,7 @@
                 }
                 ?>
 
-			<table class="table table-striped table-bordered">
+			<table class="table table-striped table-bordered" id="tabla">
 				<thead style="color:#fff">
 					<tr>
 						<th>Código</th>

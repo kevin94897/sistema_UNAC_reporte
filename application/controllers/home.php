@@ -7,6 +7,7 @@ class Home extends CI_Controller
    parent::__construct();
    $this->load->model('modeldatos');
    $this->load->library("pagination");
+   $this->load->library('pdf_report');
  }
  
  function index()
@@ -575,6 +576,11 @@ public function buscarLibroAdmin() {
     $this->load->view('administrador/footeradmin');
   }
 
+public function reportes(){
+  $data['libros'] = $this->modeldatos->getLibroAdmin();
+
+  $this->load->view('administrador/v_report', $data);
+}
 
 
 
